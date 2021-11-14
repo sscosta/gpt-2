@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 # Usage:
 #  PYTHONPATH=src ./train --dataset <file|directory|glob>
+import sys
+sys.path.append('/gpt-2/src')
+
 
 import argparse
 import json
@@ -15,6 +18,7 @@ import model, sample, encoder
 from load_dataset import load_dataset, Sampler
 from accumulate import AccumulatingOptimizer
 import memory_saving_gradients
+
 
 CHECKPOINT_DIR = 'checkpoint'
 SAMPLE_DIR = 'samples'
