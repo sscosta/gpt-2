@@ -2,7 +2,7 @@
 # Usage:
 #  PYTHONPATH=src ./train --dataset <file|directory|glob>
 import sys
-sys.path.append('/home/samuel_sampaio_costa/gpt-2')
+sys.path.append('/home/samuel_sampaio_costa/gpt-2/src')
 
 
 import argparse
