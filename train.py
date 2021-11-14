@@ -14,7 +14,7 @@ import time
 import tqdm
 from tensorflow.core.protobuf import rewriter_config_pb2
 
-from src import model, sample, encoder
+import src.model as model, src.sample as sample, src.encoder as encoder
 from load_dataset import load_dataset, Sampler
 from accumulate import AccumulatingOptimizer
 import memory_saving_gradients

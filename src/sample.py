@@ -1,6 +1,7 @@
 import tensorflow as tf
-
-import model
+import sys
+sys.path.append('/home/samuel_sampaio_costa/gpt-2/src')
+from src import model
 
 def top_k_logits(logits, k):
     if k == 0:
